@@ -1,0 +1,24 @@
+services:
+- hash: b6b7686
+  name: code-quarkus
+  path: /openshift/template.yaml
+  url: https://github.com/fabric8-launcher/code.quarkus.io
+  hash_length: 7
+  environments:
+  - name: staging
+    parameters:
+      REPLICAS: 1
+      IO_QUARKUS_CODE_ENVIRONMENT: stage
+      IO_QUARKUS_CODE_GA_EXTENSIONS_DIMENSION_INDEX: 5
+      IO_QUARKUS_CODE_GA_QUARKUS_VERSION_DIMENSION_INDEX: 6
+      IO_QUARKUS_CODE_GA_BUILD_TOOL_DIMENSION_INDEX: 7
+      IO_QUARKUS_CODE_GA_EXTENSION_QUANTITY_INDEX: 8
+      IO_QUARKUS_CODE_GA_BATCHING_ENABLED: "false"
+  - name: production
+    parameters:
+      REPLICAS: 3
+      IO_QUARKUS_CODE_ENVIRONMENT: production
+      IO_QUARKUS_CODE_GA_EXTENSIONS_DIMENSION_INDEX: 3
+      IO_QUARKUS_CODE_GA_QUARKUS_VERSION_DIMENSION_INDEX: 4
+      IO_QUARKUS_CODE_GA_BUILD_TOOL_DIMENSION_INDEX: 5
+      IO_QUARKUS_CODE_GA_EXTENSION_QUANTITY_INDEX: 6
