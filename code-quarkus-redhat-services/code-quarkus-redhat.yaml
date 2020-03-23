@@ -7,12 +7,14 @@ services:
   environments:
   - name: staging
     parameters:
+      IMAGE: quay.io/redhat-developer/code-quarkus
       REPLICAS: 1
       IO_QUARKUS_CODE_ENVIRONMENT: stage
       IO_QUARKUS_CODE_HOSTNAME: code.quarkus.stage.redhat.com
       IO_QUARKUS_CODE_GA_BATCHING_ENABLED: "false"
   - name: production
     parameters:
+      IMAGE: quay.io/redhat-developer/code-quarkus
       REPLICAS: 3
       IO_QUARKUS_CODE_HOSTNAME: code.quarkus.redhat.com
       IO_QUARKUS_CODE_ENVIRONMENT: production
