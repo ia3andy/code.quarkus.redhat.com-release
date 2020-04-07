@@ -4,4 +4,9 @@ contexts:
     services_dir: code-quarkus-redhat-services
     templates_dir: code-quarkus-redhat-templates
   name: code-quarkus-redhat
+- data:
+    output_dir: code-quarkus-redhat-int-build-processed
+    services_dir: code-quarkus-redhat-int-build-services
+    templates_dir: code-quarkus-redhat-int-build-templates
+  name: code-quarkus-redhat-int-build
 current: code-quarkus-redhat
