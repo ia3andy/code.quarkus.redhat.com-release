@@ -1,5 +1,5 @@
 services:
-- hash: ae74a6b
+- hash: b7a6a05
   name: code-quarkus-redhat
   path: /code.quarkus.io/openshift/template.yaml
   url: https://github.com/redhat-developer/code.quarkus.redhat.com
@@ -18,3 +18,16 @@ services:
       REPLICAS: 3
       IO_QUARKUS_CODE_HOSTNAME: code.quarkus.redhat.com
       IO_QUARKUS_CODE_ENVIRONMENT: production
+- hash: b7a6a05
+  name: code-quarkus-redhat-int-build
+  path: /code.quarkus.io/openshift/template.yaml
+  url: https://github.com/redhat-developer/code.quarkus.redhat.com
+  hash_length: 7
+  environments:
+  - name: staging
+    parameters:
+      IMAGE: quay.io/app-sre/code-quarkus-int-build
+      REPLICAS: 1
+      IO_QUARKUS_CODE_ENVIRONMENT: stage
+      IO_QUARKUS_CODE_HOSTNAME: code.quarkus.int-build.stage.redhat.com
+      IO_QUARKUS_CODE_GA_BATCHING_ENABLED: "false"
