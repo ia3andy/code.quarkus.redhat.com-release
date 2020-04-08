@@ -13,5 +13,6 @@ services:
       IO_QUARKUS_CODE_ENVIRONMENT: stage
       IO_QUARKUS_CODE_HOSTNAME: code.quarkus.int-build.stage.redhat.com
       IO_QUARKUS_CODE_GA_BATCHING_ENABLED: "false"
+      IO_QUARKUS_CODE_EXTENSION_PROCESSOR_TAGS_FROM: redhat-support 
   - name: production
     skip: true
