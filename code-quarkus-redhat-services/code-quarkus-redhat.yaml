@@ -20,7 +20,7 @@ services:
   - name: production
     parameters:
       IMAGE: quay.io/redhat-developer/code-quarkus
-      REPLICAS: 1
+      REPLICAS: 3
       IO_QUARKUS_CODE_HOSTNAME: code.quarkus.redhat.com
       IO_QUARKUS_CODE_ENVIRONMENT: production
       IO_QUARKUS_CODE_GA_EXTENSIONS_DIMENSION_INDEX: 1
