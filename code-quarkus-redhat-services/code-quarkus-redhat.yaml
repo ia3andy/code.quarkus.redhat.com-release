@@ -1,5 +1,5 @@
 services:
-- hash: 1257d37
+- hash: 79be87a
   name: code-quarkus-redhat
   path: /code.quarkus.io/openshift/template.yaml
   url: https://github.com/redhat-developer/code.quarkus.redhat.com
